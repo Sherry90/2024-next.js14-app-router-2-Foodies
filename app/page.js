@@ -9,6 +9,9 @@ export default function Home() {
           <Link href={"/meals"}>meals</Link>
         </div>
         <div>
+          <Link href={"/meals/share"}>meals share</Link>
+        </div>
+        <div>
           <Link href={"/community"}>community</Link>
         </div>
       </h1>
