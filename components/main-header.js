@@ -7,7 +7,7 @@ import classes from "./main-header.module.css"
 const MainHeader = () => {
   return <header className={classes.header}>
     <Link className={classes.logo} href={"/"}>
-      <Image src={logoImg} alt="food"/>
+      <Image src={logoImg} alt="food" priority/>
       NextLevel Food
     </Link>
 
