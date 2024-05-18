@@ -1,6 +1,6 @@
 "use client"
 
-export const Error = ({ error }) => {
+const Error = ({ error }) => {
   return (
     <main className={"error"}>
       <h1>An error occurred!</h1>
@@ -8,3 +8,5 @@ export const Error = ({ error }) => {
     </main>
   );
 };
+
+export default Error;
