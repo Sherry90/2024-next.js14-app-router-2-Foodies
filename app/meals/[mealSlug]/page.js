@@ -3,9 +3,15 @@ import Image from "next/image";
 import { getMeal } from "@/root/meals";
 import classes from "./page.module.css";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 const MealDetailsPage = ({ params }) => {
   const meal = getMeal(params.mealSlug);
+  
+  if (!meal) {
+    notFound();
+  }
+  
   meal.instructions = meal.instructions.replace(/\n/g, "<br />");
 
   return (
