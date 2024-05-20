@@ -5,7 +5,7 @@ import { useRef } from "react";
 import classes from "./image-picker.module.css";
 
 const ImagePicker = ({ label, name }) => {
-  const imageInput = useRef(null);
+  const imageInput = useRef();
   
   const handlePickClick = () => {
     imageInput.current.click();
