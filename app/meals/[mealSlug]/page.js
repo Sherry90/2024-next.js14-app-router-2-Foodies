@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { getMeal } from "@/root/meals";
+import { getMeal } from "@/lib/meals";
 import classes from "./page.module.css";
 import Link from "next/link";
 import { notFound } from "next/navigation";
